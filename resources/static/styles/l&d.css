@@ -1,0 +1,57 @@
+.contenedor-icons-switch {
+    padding: 0.15%;
+    margin-top: 1%;  
+
+}
+
+.contenedor-switch, .contenedor-icons-switch {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    color: var(--texto-principal);
+    margin-right: 1%;  
+}
+
+.contenedor-switch {
+    margin-bottom: 1%;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background: #7b61ff ;
+    border-radius: 34px;
+    transition: 0.3s;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    left: 4px;
+    top: 4px;
+    background: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+input:checked + .slider {
+    background: #00f5ff;
+}
+
+input:checked + .slider::before {
+    transform: translateX(26px);
+}

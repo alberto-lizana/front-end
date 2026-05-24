@@ -1,0 +1,47 @@
+.contenedor-img {
+    background-image: url("/resources/static/img/img_incial.png");
+    background-size: cover;      
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 650px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 1000px rgb(53, 28, 28);
+    z-index: 0;
+}
+
+
+@media (max-width: 2560px) {
+    .contenedor-img {
+        height: 850px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .contenedor-img {
+        height: 750px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .contenedor-img {
+        height: 650px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedor-img {
+        height: 550px;
+    }
+}
+
+@media (max-width: 425px) {
+    .contenedor-img {
+        height: 350px;
+    }
+}
+
+@media (max-width: 320px) {
+    .contenedor-img {
+        height: 250px;
+    }
+}
