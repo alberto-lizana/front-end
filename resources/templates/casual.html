@@ -23,8 +23,8 @@
     <!-- CSS LIGHT / DARK -->
     <link href="/resources/static/styles/l&d.css" rel="stylesheet">
 
-    <!-- CSS INICIO -->
-    <link href="/resources/static/styles/inicio.css" rel="stylesheet">
+    <!-- CSS CATEGORIA -->
+    <link href="/resources/static/styles/categoria.css" rel="stylesheet">
 
     <!-- API GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -76,21 +76,21 @@
                             </a>
                         </li>
 
-                        <li>
+                        <li class="submenu-categorias-item">
                             <a href="/resources/templates/coperativos.html"> 
                                 <span class="letras-nav-submenu"> Cooperativos </span>
                                 <i class="fa-solid fa-handshake iconos-nav-submenu"></i>
                             </a> 
                         </li>
 
-                        <li>
+                        <li class="submenu-categorias-item">
                             <a href="/resources/templates/rol.html">
                                 <span class="letras-nav-submenu"> Rol </span>
                                 <i class="fa-solid fa-masks-theater iconos-nav-submenu"></i>
                             </a>
                         </li>
                                             
-                        <li>
+                        <li class="submenu-categorias-item">
                             <a href="/resources/templates/casual.html"> 
                                 <span class="letras-nav-submenu"> Casual </span>   
                                 <i class="fa-solid fa-dice-five iconos-nav-submenu"></i>    
@@ -124,6 +124,55 @@
         </div>
 
     </nav> 
+
+    <main>
+
+        <!-- Tabla de productos -->
+        <section class="contenedor-principal">
+
+            <div class="tabla-productos">
+
+                <div class="producto">
+                    <div class="producto-imagen">
+                        <img src="/resources/static/img/uno.png" alt="UNO">
+                    </div>
+                    <h3>UNO</h3>
+                    <p>
+                        Un juego de cartas rápido y divertido donde los jugadores
+                        compiten para quedarse sin cartas antes que los demás.
+                    </p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+
+                <div class="producto">
+                    <div class="producto-imagen">
+                        <img src="/resources/static/img/dixit.jpg" alt="Dixit">
+                    </div>
+                    <h3>Dixit</h3>
+                    <p>
+                        Un juego casual de imaginación y creatividad donde las cartas
+                        cuentan historias mediante ilustraciones artísticas.
+                    </p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+
+                <div class="producto">
+                    <div class="producto-imagen">
+                        <img src="/resources/static/img/exploding_kittens.jpg" alt="Exploding Kittens">
+                    </div>
+                    <h3>Exploding Kittens</h3>
+                    <p>
+                        Un juego de cartas caótico y humorístico donde los jugadores
+                        intentan evitar explotar mientras sabotean a sus rivales.
+                    </p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
 
     <!-- FOOTER COMPLETO -->
     <footer class="footer">

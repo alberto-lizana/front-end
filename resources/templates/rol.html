@@ -23,8 +23,8 @@
     <!-- CSS LIGHT / DARK -->
     <link href="/resources/static/styles/l&d.css" rel="stylesheet">
 
-    <!-- CSS INICIO -->
-    <link href="/resources/static/styles/inicio.css" rel="stylesheet">
+    <!-- CSS CATEGORIA -->
+    <link href="/resources/static/styles/categoria.css" rel="stylesheet">
 
     <!-- API GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -76,21 +76,21 @@
                             </a>
                         </li>
 
-                        <li>
+                        <li class="submenu-categorias-item">
                             <a href="/resources/templates/coperativos.html"> 
                                 <span class="letras-nav-submenu"> Cooperativos </span>
                                 <i class="fa-solid fa-handshake iconos-nav-submenu"></i>
                             </a> 
                         </li>
 
-                        <li>
+                        <li class="submenu-categorias-item">
                             <a href="/resources/templates/rol.html">
                                 <span class="letras-nav-submenu"> Rol </span>
                                 <i class="fa-solid fa-masks-theater iconos-nav-submenu"></i>
                             </a>
                         </li>
                                             
-                        <li>
+                        <li class="submenu-categorias-item">
                             <a href="/resources/templates/casual.html"> 
                                 <span class="letras-nav-submenu"> Casual </span>   
                                 <i class="fa-solid fa-dice-five iconos-nav-submenu"></i>    
@@ -125,6 +125,55 @@
 
     </nav> 
 
+    <main>
+
+        <!-- Tabla de productos -->
+        <section class="contenedor-principal">
+
+            <div class="tabla-productos">
+
+                <div class="producto">
+                    <div class="producto-imagen">
+                        <img src="/resources/static/img/dungeons_dragons.jpg" alt="Dungeons & Dragons">
+                    </div>
+                    <h3>Dungeons & Dragons</h3>
+                    <p>
+                        Un juego de rol de fantasía donde los jugadores crean personajes,
+                        viven aventuras y exploran mundos mágicos.
+                    </p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+
+                <div class="producto">
+                    <div class="producto-imagen">
+                        <img src="/resources/static/img/cthulhu.jpg" alt="Call of Cthulhu">
+                    </div>
+                    <h3>Call of Cthulhu</h3>
+                    <p>
+                        Un juego de rol de horror e investigación inspirado
+                        en las historias de H.P. Lovecraft.
+                    </p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+
+                <div class="producto">
+                    <div class="producto-imagen">
+                        <img src="/resources/static/img/vampire_rivals.jpg" alt="Vampire: The Masquerade">
+                    </div>
+                    <h3>Vampire: The Masquerade</h3>
+                    <p>
+                        Un juego de rol narrativo donde los jugadores interpretan
+                        vampiros en un mundo oscuro y lleno de secretos.
+                    </p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>    
+        
     <!-- FOOTER COMPLETO -->
     <footer class="footer">
 

@@ -23,8 +23,8 @@
     <!-- CSS LIGHT / DARK -->
     <link href="/resources/static/styles/l&d.css" rel="stylesheet">
 
-    <!-- CSS INICIO -->
-    <link href="/resources/static/styles/inicio.css" rel="stylesheet">
+    <!-- CSS CATEGORIA -->
+    <link href="/resources/static/styles/categoria.css" rel="stylesheet">
 
     <!-- API GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -75,21 +75,21 @@
                             </a>
                         </li>
 
-                        <li>
+                        <li class="submenu-categorias-item">
                             <a href="/resources/templates/coperativos.html"> 
                                 <span class="letras-nav-submenu"> Cooperativos </span>
                                 <i class="fa-solid fa-handshake iconos-nav-submenu"></i>
                             </a> 
                         </li>
 
-                        <li>
+                        <li class="submenu-categorias-item">
                             <a href="/resources/templates/rol.html">
                                 <span class="letras-nav-submenu"> Rol </span>
                                 <i class="fa-solid fa-masks-theater iconos-nav-submenu"></i>
                             </a>
                         </li>
                                             
-                        <li>
+                        <li class="submenu-categorias-item">
                             <a href="/resources/templates/casual.html"> 
                                 <span class="letras-nav-submenu"> Casual </span>   
                                 <i class="fa-solid fa-dice-five iconos-nav-submenu"></i>    
@@ -122,8 +122,56 @@
             <i class="fa-solid fa-bars"></i>
         </div>
 
-    </nav>  
+    </nav> 
 
+    <main>
+
+        <!-- Tabla de productos -->
+        <section class="contenedor-principal">
+
+            <div class="tabla-productos">
+
+                <div class="producto">
+                    <div class="producto-imagen">
+                        <img src="/resources/static/img/pandemic.jpg" alt="Pandemic">
+                    </div>
+                    <h3>Pandemic</h3>
+                    <p>
+                        Un juego cooperativo donde los jugadores trabajan juntos 
+                        para detener enfermedades y salvar al mundo.
+                    </p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+
+                <div class="producto">
+                    <div class="producto-imagen">
+                        <img src="/resources/static/img/the_crew.png" alt="The Crew">
+                    </div>
+                    <h3>The Crew</h3>
+                    <p>
+                        Un juego cooperativo de cartas donde los jugadores completan 
+                        misiones espaciales usando estrategia y comunicación.
+                    </p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+
+                <div class="producto">
+                    <div class="producto-imagen">
+                        <img src="/resources/static/img/arkham_horror.jpg" alt="Arkham Horror">
+                    </div>
+                    <h3>Arkham Horror</h3>
+                    <p>
+                        Un juego cooperativo de terror e investigación inspirado 
+                        en el universo de Lovecraft.
+                    </p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>    
 
     <!-- FOOTER COMPLETO -->
     <footer class="footer">

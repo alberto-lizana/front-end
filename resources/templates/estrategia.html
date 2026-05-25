@@ -23,8 +23,8 @@
     <!-- CSS LIGHT / DARK -->
     <link href="/resources/static/styles/l&d.css" rel="stylesheet">
 
-    <!-- CSS INICIO -->
-    <link href="/resources/static/styles/inicio.css" rel="stylesheet">
+    <!-- CSS CATEGORIA -->
+    <link href="/resources/static/styles/categoria.css" rel="stylesheet">
 
     <!-- API GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -75,21 +75,21 @@
                             </a>
                         </li>
 
-                        <li>
+                        <li class="submenu-categorias-item">
                             <a href="/resources/templates/coperativos.html"> 
                                 <span class="letras-nav-submenu"> Cooperativos </span>
                                 <i class="fa-solid fa-handshake iconos-nav-submenu"></i>
                             </a> 
                         </li>
 
-                        <li>
+                        <li class="submenu-categorias-item">
                             <a href="/resources/templates/rol.html">
                                 <span class="letras-nav-submenu"> Rol </span>
                                 <i class="fa-solid fa-masks-theater iconos-nav-submenu"></i>
                             </a>
                         </li>
                                             
-                        <li>
+                        <li class="submenu-categorias-item">
                             <a href="/resources/templates/casual.html"> 
                                 <span class="letras-nav-submenu"> Casual </span>   
                                 <i class="fa-solid fa-dice-five iconos-nav-submenu"></i>    
@@ -123,6 +123,52 @@
         </div>
 
     </nav> 
+
+    <main>
+
+        <!-- Tabla de productos -->
+        <section class="contenedor-principal">
+
+            <div class="tabla-productos">
+                <div class="producto">
+                    <div class="producto-imagen">
+                        <img src="/resources/static/img/terraforming-mars.jpg" alt="Terraforming Mars">
+                    </div>
+                    <h3>Terraforming Mars</h3>
+                    <p>
+                        Un juego de estrategia donde los jugadores compiten para 
+                        terraformar Marte y hacerlo habitable.
+                    </p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+
+                <div class="producto">
+                    <div class="producto-imagen">
+                        <img src="/resources/static/img/ajedrez.jpg" alt="Ajedrez">
+                    </div>
+                    <h3>Ajedrez</h3>
+                    <p>
+                        El clásico juego de estrategia donde dos jugadores compiten 
+                        usando táctica, lógica y planificación.
+                    </p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+
+                <div class="producto">
+                    <div class="producto-imagen">
+                        <img src="/resources/static/img/catan.jpg" alt="Catan">
+                    </div>
+                    <h3>Catan</h3>
+                    <p>
+                        Un juego de estrategia y comercio donde los jugadores 
+                        construyen aldeas, caminos y ciudades para dominar la isla.
+                    </p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <!-- FOOTER COMPLETO -->
     <footer class="footer">

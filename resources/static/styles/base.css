@@ -59,6 +59,7 @@ h4 {
     width: 100%;
     border-radius: 10px 10px 10px 10px;
     font-size: clamp(13px, 1.2vw, 25px);
+    
 }
 
 .contenedor-principal {
