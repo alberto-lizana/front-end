@@ -26,10 +26,15 @@
     <!-- CSS INICIO -->
     <link href="/resources/static/styles/inicio.css" rel="stylesheet">
 
-    <!-- LETRA DARK -->
+    <!-- API GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- LETRA NAV -->
     <link href="https://fonts.googleapis.com/css2?family=Eater&display=swap" rel="stylesheet">
+
+    <!-- LETRA NORMAL -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
 
 
 </head>
@@ -42,72 +47,82 @@
             <div class="img-logo" alt="Logo de la tienda Jumanji">
             </div>
         </div>
-
+        
         <!-- NAVEGADOR PARTE INTERACTIVA -->
-        <div>
-            <ul>
-                <li>
-                    <a href="/resources/templates/inicio.html"> Inicio
-                        <i class="fa-solid fa-house"></i>
-                    </a>
-                </li>
-                
-                <li> 
-                    Categorias 
-                        <i class="fa-solid fa-table-list"></i>
-                    <!-- SUBMENU CATEGORIAS RECUADRO EMERGENTE -->
-                    <div>
-                        <ul>
+        <div class="nav-interactivo">
 
-                            <li>
-                                <a href="/resources/templates/estrategia.html"> Estrategia 
-                                    <i class="fa-solid fa-chess"></i>
-                                </a>
-                            </li>
+            <!-- INICIO --> 
+            <li class="nav-item">
+                <a href="/resources/templates/inicio.html"> 
+                    <span class="letras-nav"> Inicio </span>
+                    <i class="fa-solid fa-house iconos-nav"></i>
+                </a>
+            </li>
 
-                            <li>
-                                <a href="/resources/templates/coperativos.html"> Cooperativos 
-                                    <i class="fa-solid fa-handshake"></i>
-                                </a> 
-                            </li>
 
-                            <li>
-                                <a href="/resources/templates/rol.html"> Rol 
-                                    <i class="fa-solid fa-masks-theater"></i>
-                                </a>
-                            </li>
-                            
-                            <li>
-                                <a href="/resources/templates/casual.html"> Casual
-                                    <i class="fa-solid fa-dice-five"></i>
-                                </a>
-                            </li>
+            <!-- CATEGORIAS -->
+            <li class="nav-item" id="boton-submenu"> 
+                <a href="javascript:void(0)"> 
+                    <span class="letras-nav"> Categorias </span>
+                    <i class="fa-solid fa-table-list iconos-nav"></i>
+                </a> 
+                <!-- SUBMENU CATEGORIAS -->
+                <div class="submenu-categorias">
+                    <ul class="submenu-categorias-lista">
+                        <li class="submenu-categorias-item">
+                            <a href="/resources/templates/estrategia.html"> 
+                                <span class="letras-nav-submenu"> Estrategia </span>
+                                <i class="fa-solid fa-chess iconos-nav-submenu"></i>
+                            </a>
+                        </li>
 
-                        </ul>
-                    </div>
-                </li>
+                        <li>
+                            <a href="/resources/templates/coperativos.html"> 
+                                <span class="letras-nav-submenu"> Cooperativos </span>
+                                <i class="fa-solid fa-handshake iconos-nav-submenu"></i>
+                            </a> 
+                        </li>
 
-                <li>
-                    <a href="#footer_contacto"> Contacto
-                        <i class="fa-solid fa-circle-user"></i>
-                    </a>
-                </li>
-
-                <!-- CARRITO -->
-                <div>
-                    <li>
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </li>
+                        <li>
+                            <a href="/resources/templates/rol.html">
+                                <span class="letras-nav-submenu"> Rol </span>
+                                <i class="fa-solid fa-masks-theater iconos-nav-submenu"></i>
+                            </a>
+                        </li>
+                                            
+                        <li>
+                            <a href="/resources/templates/casual.html"> 
+                                <span class="letras-nav-submenu"> Casual </span>   
+                                <i class="fa-solid fa-dice-five iconos-nav-submenu"></i>    
+                            </a>                                      
+                        </li>
+                    </ul>
                 </div>
+            </li>
 
-                <!-- ICONO RESPONSIVE -->
-                <div>
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-
-            </ul>
-
+            <!-- CONTACTO -->
+            <li class="nav-item">
+                <a href="#footer_contacto"> 
+                    <span class="letras-nav">Contacto</span>
+                    <i class="fa-solid fa-circle-user iconos-nav"></i>
+                </a>
+            </li>
+            
+            
+            <!-- CARRITO -->
+            <li class="nav-item">
+                <a href="#">
+                    <span class="letras-nav">Carrito</span>
+                    <i class="fa-solid fa-cart-shopping iconos-nav"></i>
+                </a>
+            </li>
         </div>
+
+        <!-- ICONO RESPONSIVE -->
+        <div class="icono-responsive">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
     </nav> 
 
     <!-- FOOTER COMPLETO -->
@@ -179,5 +194,6 @@
     <!-- JAVASCRIPT -->
     <!-- JAVASCRIPT MODO LIGHT & DARK -->
     <script src="/resources/static/js/l&d.js"></script> 
+    <script src="/resources/static/js/nav.js"></script> 
 </body>
 </html>

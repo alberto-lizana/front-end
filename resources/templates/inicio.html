@@ -52,64 +52,69 @@
 
             <!-- INICIO --> 
             <li class="nav-item">
-                <a href="/resources/templates/inicio.html" class="letras-nav"> Inicio </a>
-                <i class="fa-solid fa-house iconos-nav"></i>
+                <a href="/resources/templates/inicio.html"> 
+                    <span class="letras-nav"> Inicio </span>
+                    <i class="fa-solid fa-house iconos-nav"></i>
+                </a>
             </li>
 
 
             <!-- CATEGORIAS -->
-            <li class="nav-item"> 
-                <a href="#" class="letras-nav" > Categorias </a> 
-                <i class="fa-solid fa-table-list iconos-nav"></i>
+            <li class="nav-item" id="boton-submenu"> 
+                <a href="javascript:void(0)"> 
+                    <span class="letras-nav"> Categorias </span>
+                    <i class="fa-solid fa-table-list iconos-nav"></i>
+                </a> 
+                <!-- SUBMENU CATEGORIAS -->
+                <div class="submenu-categorias">
+                    <ul class="submenu-categorias-lista">
+                        <li class="submenu-categorias-item">
+                            <a href="/resources/templates/estrategia.html"> 
+                                <span class="letras-nav-submenu"> Estrategia </span>
+                                <i class="fa-solid fa-chess iconos-nav-submenu"></i>
+                            </a>
+                        </li>
+
+                        <li class="submenu-categorias-item">
+                            <a href="/resources/templates/coperativos.html"> 
+                                <span class="letras-nav-submenu"> Cooperativos </span>
+                                <i class="fa-solid fa-handshake iconos-nav-submenu"></i>
+                            </a> 
+                        </li>
+
+                        <li class="submenu-categorias-item">
+                            <a href="/resources/templates/rol.html">
+                                <span class="letras-nav-submenu"> Rol </span>
+                                <i class="fa-solid fa-masks-theater iconos-nav-submenu"></i>
+                            </a>
+                        </li>
+                                            
+                        <li class="submenu-categorias-item">
+                            <a href="/resources/templates/casual.html"> 
+                                <span class="letras-nav-submenu"> Casual </span>   
+                                <i class="fa-solid fa-dice-five iconos-nav-submenu"></i>    
+                            </a>                                      
+                        </li>
+                    </ul>
+                </div>
             </li>
-
-            <!-- SUBMENU CATEGORIAS -->
-            <div class="submenu-categorias">
-                <ul class="submenu-categorias-lista">
-                    <li class="submenu-categorias-item">
-                        <a href="/resources/templates/estrategia.html"> 
-                            <p class="letras-nav"> Estrategia </p>
-                            <i class="fa-solid fa-chess iconos-nav"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="/resources/templates/coperativos.html"> 
-                            <p class="letras-nav"> Cooperativos </p>
-                            <i class="fa-solid fa-handshake iconos-nav"></i>
-                        </a> 
-                    </li>
-
-                    <li>
-                        <a href="/resources/templates/rol.html">
-                            <p class="letras-nav"> Rol </p>
-                            <i class="fa-solid fa-masks-theater iconos-nav"></i>
-                        </a>
-                    </li>
-                                        
-                    <li>
-                        <a href="/resources/templates/casual.html"> 
-                            <p class="letras-nav"> Casual </p>   
-                            <i class="fa-solid fa-dice-five iconos-nav"></i>    
-                        </a>                                      
-                    </li>
-                </ul>
-            </div>
 
             <!-- CONTACTO -->
             <li class="nav-item">
-                <a href="#footer_contacto" class="letras-nav" > Contacto </a>
-                <i class="fa-solid fa-circle-user iconos-nav"></i>
+                <a href="#footer_contacto"> 
+                    <span class="letras-nav">Contacto</span>
+                    <i class="fa-solid fa-circle-user iconos-nav"></i>
+                </a>
             </li>
             
             
             <!-- CARRITO -->
             <li class="nav-item">
-                <a href="#" class="letras-nav"> Carrito </a>
-                <i class="fa-solid fa-cart-shopping iconos-nav"></i>
+                <a href="#">
+                    <span class="letras-nav">Carrito</span>
+                    <i class="fa-solid fa-cart-shopping iconos-nav"></i>
+                </a>
             </li>
-
-
         </div>
 
         <!-- ICONO RESPONSIVE -->
@@ -125,21 +130,16 @@
         </div>
      </section>
 
-    <!-- SECCION MODO LIGHT & DARK -->
+     <!-- SECCION MODO LIGHT & DARK -->
     <section class="contenedor-principal">
         <div class="contenedor-icons-switch">
-            <i class="fa-solid fa-sun"></i>
-            /
-            <i class="fa-solid fa-moon"></i>
-        </div>
-
-            <div class="contenedor-switch">
+            <i class="fa-solid fa-sun iconos-ld-izquierda"></i>
                 <label class="switch"> 
                     <input type="checkbox">
-                    <span class="slider round"></span>
+                        <span class="slider round"></span>
                 </label>
-            </div>
-
+            <i class="fa-solid fa-moon iconos-ld-derecha"></i>
+        </div>
     </section>
 
 
@@ -193,15 +193,15 @@
                 <ul>
                     <li class="titulo-footer" id="footer_contacto">Contacto</li>
                     
-                    <li>
+                    <li class="item-footer">
                         <a href="">Correo</a>
                     </li>
 
-                    <li>
+                    <li class="item-footer">
                         <a href="">Teléfono</a>
                     </li>
 
-                    <li>
+                    <li class="item-footer">
                         <a href="">Dirección</a>
                     </li>
 
@@ -212,13 +212,13 @@
                 <ul>
                     <li class="titulo-footer">Redes</li>
 
-                    <li>
+                    <li class="item-footer">
                         <a href="">Facebook</a>
                     </li>
-                    <li>
+                    <li class="item-footer">
                         <a href="">Instagram</a>
                     </li>
-                    <li>
+                    <li class="item-footer">
                         <a href="">Twitter</a>
                     </li>
                 </ul>
@@ -229,15 +229,15 @@
 
                     <li class="titulo-footer">Comunidad</li> 
 
-                    <li>
+                    <li class="item-footer">
                         <a href="#">Grupo WhatsApp</a>
                     </li>
 
-                    <li>
+                    <li class="item-footer">
                         <a href="#">Discord</a>
                     </li>
 
-                    <li>
+                    <li class="item-footer">
                         <a href="#">Eventos</a>
                     </li>
                 </ul>                
@@ -251,7 +251,10 @@
     </footer>
 
     <!-- JAVASCRIPT -->
-    <!-- JAVASCRIPT MODO LIGHT & DARK -->
+    <!-- MODO LIGHT & DARK -->
     <script src="/resources/static/js/l&d.js"></script> 
+
+    <!-- NAV JS -->
+     <script src="/resources/static/js/nav.js"></script> 
 </body>
 </html>

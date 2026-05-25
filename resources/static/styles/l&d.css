@@ -1,26 +1,48 @@
-.contenedor-icons-switch {
-    padding: 0.15%;
-    margin-top: 1%;  
-
-}
-
-.contenedor-switch, .contenedor-icons-switch {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-    color: var(--texto-principal);
-    margin-right: 1%;  
-}
-
-.contenedor-switch {
-    margin-bottom: 1%;
+:root {
+    --ratio-ancho: 1.65;
+    --ratio-circulo: 0.65;
+    --ratio-iconos: 0.6;
 }
 
 .switch {
+    --alto: 40px;
+    --ancho: calc(var(--alto) * var(--ratio-ancho));
+    --circulo: calc(var(--alto) * var(--ratio-circulo));
+    --padding: calc((var(--alto) - var(--circulo)) / 2);
+
+    width: var(--ancho);
+    height: var(--alto);
+
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+}
+
+.slider::before {
+    width: var(--circulo);
+    height: var(--circulo);
+}
+
+.contenedor-icons-switch {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    color: var(--texto-principal);
+}
+
+.iconos-ld-izquierda {
+    font-size: calc(var(--alto) * var(--ratio-iconos));
+    margin-right: 0.30%;
+}
+
+.iconos-ld-derecha {
+    font-size: calc(var(--alto) * var(--ratio-iconos));
+    margin-right: 0.30%;
+    margin-left: 0.4%;
+}
+.contenedor-icons-switch {
+    padding: 0.15%;
+    margin-top: 1%;
 }
 
 .switch input {
@@ -29,20 +51,20 @@
 
 .slider {
     position: absolute;
-    cursor: pointer;
     inset: 0;
-    background: #7b61ff ;
-    border-radius: 34px;
+    cursor: pointer;
+    background: #7b61ff;
+    border-radius: var(--alto);
     transition: 0.3s;
 }
 
 .slider::before {
     content: "";
     position: absolute;
-    width: 26px;
-    height: 26px;
-    left: 4px;
-    top: 4px;
+    width: var(--circulo);
+    height: var(--circulo);
+    left: var(--padding);
+    top: var(--padding);
     background: white;
     border-radius: 50%;
     transition: 0.3s;
@@ -53,5 +75,36 @@ input:checked + .slider {
 }
 
 input:checked + .slider::before {
-    transform: translateX(26px);
+    transform: translateX(calc(var(--ancho) - var(--circulo) - (var(--padding) * 2)));
+}
+
+
+@media (max-width: 1440px) {
+    .switch {
+        --alto: 35px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .switch {
+        --alto: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .switch {
+        --alto: 25px;
+    }
+}
+
+@media (max-width: 4250px) {
+    .switch {
+        --alto: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .switch {
+        --alto: 19px;
+    }
 }
