@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const toggle = document.querySelector("input");
+    const toggle = document.getElementById("l&d-input");
     const body = document.body;
 
     // cargar estado guardado

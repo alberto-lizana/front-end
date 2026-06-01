@@ -6,25 +6,25 @@
     <title>Jumanji</title>
 
     <!-- LOGO TIENDA -->
-    <link rel="icon" type="image/png" href="/resources/static/img/logo_tienda_sf.png">
+    <link rel="icon" type="image/png" href="../static/img/logo_tienda_sf.png">
 
     <!-- ICONOS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     
     <!-- CSS BASE -->
-    <link href="/resources/static/styles/base.css" rel="stylesheet">
+    <link href="../static/styles/base.css" rel="stylesheet">
 
     <!-- CSS NAV -->
-    <link href="/resources/static/styles/nav.css" rel="stylesheet">
+    <link href="../static/styles/nav.css" rel="stylesheet">
 
     <!-- CSS FOOTER -->
-    <link href="/resources/static/styles/footer.css" rel="stylesheet">
+    <link href="../static/styles/footer.css" rel="stylesheet">
 
     <!-- CSS LIGHT / DARK -->
-    <link href="/resources/static/styles/l&d.css" rel="stylesheet">
+    <link href="../static/styles/l&d.css" rel="stylesheet">
 
     <!-- CSS CATEGORIA -->
-    <link href="/resources/static/styles/categoria.css" rel="stylesheet">
+    <link href="../static/styles/categoria.css" rel="stylesheet">
 
     <!-- API GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,7 +41,7 @@
 <body>
 
     <!-- NAVEGADOR COMPLETO -->
-    <nav class="contenedor"> 
+    <nav class="contenedor" id="nav"> 
         <!-- CONTENEDOR PARA IMAGEN DE MARCA EN EL NAV -->
         <div class="marca">
             <div class="img-logo" alt="Logo de la tienda Jumanji">
@@ -49,11 +49,11 @@
         </div>
         
         <!-- NAVEGADOR PARTE INTERACTIVA -->
-        <div class="nav-interactivo">
+        <div class="nav-interactivo" id="nav-interactivo">
 
             <!-- INICIO --> 
             <li class="nav-item">
-                <a href="/resources/templates/inicio.html"> 
+                <a href="../templates/inicio.html"> 
                     <span class="letras-nav"> Inicio </span>
                     <i class="fa-solid fa-house iconos-nav"></i>
                 </a>
@@ -67,31 +67,31 @@
                     <i class="fa-solid fa-table-list iconos-nav"></i>
                 </a> 
                 <!-- SUBMENU CATEGORIAS -->
-                <div class="submenu-categorias">
+                <div class="submenu-categorias" id= "submenu-categorias">
                     <ul class="submenu-categorias-lista">
                         <li class="submenu-categorias-item">
-                            <a href="/resources/templates/estrategia.html"> 
+                            <a href="../templates/estrategia.html"> 
                                 <span class="letras-nav-submenu"> Estrategia </span>
                                 <i class="fa-solid fa-chess iconos-nav-submenu"></i>
                             </a>
                         </li>
 
                         <li class="submenu-categorias-item">
-                            <a href="/resources/templates/coperativos.html"> 
+                            <a href="../templates/coperativos.html"> 
                                 <span class="letras-nav-submenu"> Cooperativos </span>
                                 <i class="fa-solid fa-handshake iconos-nav-submenu"></i>
                             </a> 
                         </li>
 
                         <li class="submenu-categorias-item">
-                            <a href="/resources/templates/rol.html">
+                            <a href="../templates/rol.html">
                                 <span class="letras-nav-submenu"> Rol </span>
                                 <i class="fa-solid fa-masks-theater iconos-nav-submenu"></i>
                             </a>
                         </li>
                                             
                         <li class="submenu-categorias-item">
-                            <a href="/resources/templates/casual.html"> 
+                            <a href="../templates/casual.html"> 
                                 <span class="letras-nav-submenu"> Casual </span>   
                                 <i class="fa-solid fa-dice-five iconos-nav-submenu"></i>    
                             </a>                                      
@@ -119,7 +119,7 @@
         </div>
 
         <!-- ICONO RESPONSIVE -->
-        <div class="icono-responsive">
+        <div class="icono-responsive" id="nav-responsive-icon">
             <i class="fa-solid fa-bars"></i>
         </div>
 
@@ -134,7 +134,7 @@
 
                 <div class="producto">
                     <div class="producto-imagen">
-                        <img src="/resources/static/img/dungeons_dragons.jpg" alt="Dungeons & Dragons">
+                        <img src="../static/img/dungeons_dragons.jpg" alt="Dungeons & Dragons">
                     </div>
                     <h3>Dungeons & Dragons</h3>
                     <p>
@@ -146,7 +146,7 @@
 
                 <div class="producto">
                     <div class="producto-imagen">
-                        <img src="/resources/static/img/cthulhu.jpg" alt="Call of Cthulhu">
+                        <img src="../static/img/cthulhu.jpg" alt="Call of Cthulhu">
                     </div>
                     <h3>Call of Cthulhu</h3>
                     <p>
@@ -158,7 +158,7 @@
 
                 <div class="producto">
                     <div class="producto-imagen">
-                        <img src="/resources/static/img/vampire_rivals.jpg" alt="Vampire: The Masquerade">
+                        <img src="../static/img/vampire_rivals.jpg" alt="Vampire: The Masquerade">
                     </div>
                     <h3>Vampire: The Masquerade</h3>
                     <p>
@@ -242,7 +242,7 @@
 
     <!-- JAVASCRIPT -->
     <!-- JAVASCRIPT MODO LIGHT & DARK -->
-    <script src="/resources/static/js/l&d.js"></script> 
-    <script src="/resources/static/js/nav.js"></script> 
+    <script src="../static/js/l&d.js"></script> 
+    <script src="../static/js/nav.js"></script> 
 </body>
 </html>
