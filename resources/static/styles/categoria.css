@@ -71,6 +71,26 @@
     transform: scale(1.03);
 }
 
+.info-juego{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 15px 0;
+    padding: 1%;
+}
+
+.item-info{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.08);
+}
+
+.titulo-info{
+    font-weight: bold;
+    color: var(--destacar-primario);
+}
 
 @media (max-width: 900px) {
 
