@@ -81,6 +81,7 @@
     font-family: "Cinzel", serif;
     font-size: clamp(13px, .8vw, 18px);
     font-weight: bold;
+    color: var(--texto-blanco);
 }
 
 .subdivision-explicativo-categoria{
